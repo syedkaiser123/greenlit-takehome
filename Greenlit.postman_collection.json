@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "465a47ea-7f1a-4456-85e6-ddbb642ffcd1",
+		"name": "GreenLit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11516664"
+	},
+	"item": [
+		{
+			"name": "Add Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"syed\",\r\n    \"last_name\": \"kaiser\",\r\n    \"email\": \"syedkaiser006@gmail.com\",\r\n    \"minimum_fee\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"syed\",\r\n    \"last_name\": \"kaiser\",\r\n    \"email\": \"syedkaiserUpdated2@gmail.com\",\r\n    \"minimum_fee\": 200,\r\n    \"temp\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/18"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Films",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://127.0.0.1:8000/films/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Film",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"FFX\",\r\n    \"description\": \"UpdatedDesc3\",\r\n    \"budget\": 0,\r\n    \"release_year\": 2017,\r\n    \"genres\": [\r\n        \"action\",\r\n        \"SciFi\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/films/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"DC\",\r\n    \"contact_email_address\": \"DC@abc.com\",\r\n    \"phone_number\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/companies/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Company",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Marvel\",\r\n    \"contact_email_address\": \"Marvel1234@abc.com\",\r\n    \"phone_number\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/companies/2"
+			},
+			"response": []
+		},
+		{
+			"name": "user-film association",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/1/films/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all user roles with associations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/user-roles/"
+			},
+			"response": []
+		},
+		{
+			"name": "user-company association",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/1/companies/3"
+			},
+			"response": []
+		}
+	]
+}
