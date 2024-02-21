@@ -20,10 +20,12 @@ SimpleCRUD is a Python project that implements CRUD (Create, Read, Update, Delet
 
 ## How to Run
 1. Set up poetry on your system.
-1. Install the required dependencies by running `poetry install` from the root directory.
-2. Set up your PostgreSQL database and update the `SQLALCHEMY_DATABASE_URL` in `database/database_config.py` with your database connection string.
-3. Run the FastAPI application by executing `uvicorn main:app --reload`.
-4. Access the API endpoints through a web browser or API client like Postman.
+2. Install the required dependencies by running `poetry install` from the root directory.
+3. clone the repo ```git clone https://github.com/syedkaiser123/greenlit-takehome.git```
+4. Navigate to ```cd greenlit-takehome```
+5. Set up your PostgreSQL database and update the `SQLALCHEMY_DATABASE_URL` in `database/database_config.py` with your database connection string.
+6. Run the FastAPI application by executing `uvicorn main:app --reload`.
+7. Access the API endpoints through a web browser or API client like Postman.
 
 ## API Endpoints
 - **POST** ```http://127.0.0.1:8000/users/```
