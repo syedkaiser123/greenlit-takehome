@@ -23,7 +23,12 @@ SimpleCRUD is a Python project that implements CRUD (Create, Read, Update, Delet
 2. Install the required dependencies by running `poetry install` from the root directory.
 3. clone the repo ```git clone https://github.com/syedkaiser123/greenlit-takehome.git```
 4. Navigate to ```cd greenlit-takehome```
-5. Set up your PostgreSQL database and update the `SQLALCHEMY_DATABASE_URL` in `database/database_config.py` with your database connection string.
+5. Set up your PostgreSQL database and update the `SQLALCHEMY_DATABASE_URL` in `database/database_config.py` with your database connection string. ```OR``` you can just use the given postgres connection string in the database/database_config.py and access it via the UI ```https://supabase.com/dashboard/project/rbuwsyjyaobjdyqizakw```
+
+## Note: Here are the credentials to access the hosted database:
+    - URL: https://supabase.com/dashboard/project/rbuwsyjyaobjdyqizakw
+    - Username: syedkaiser123
+    - Password: 525DloVS4uuldi0X
 6. Run the FastAPI application by executing `uvicorn main:app --reload`.
 7. Access the API endpoints through a web browser or API client like Postman.
 
