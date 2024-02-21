@@ -37,6 +37,8 @@ SimpleCRUD is a Python project that implements CRUD (Create, Read, Update, Delet
 - **POST** ```http://127.0.0.1:8000/users/1/films/2```
 - **GET** ```http://127.0.0.1:8000/user-roles/```
 
+### Note: You can also find the postman collection in the above repo.
+
 ## Dependencies
 
 - FastAPI: Web framework for building APIs with Python.
